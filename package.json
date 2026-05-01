@@ -1,0 +1,23 @@
+{
+  "name": "quick-blog-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install",
+    "build": "cd client && npm run build",
+    "start": "node server/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viku4780/ai-blog-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Viku4780/ai-blog-app/issues"
+  },
+  "homepage": "https://github.com/Viku4780/ai-blog-app#readme",
+  "description": ""
+}

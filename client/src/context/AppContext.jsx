@@ -3,7 +3,11 @@ import axios from 'axios';
 import {  useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
-axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
+const protocol = window.location.protocol === 'https:' ? 'https://' : 'https://';
+const host = window.location.host;
+const client_url = `${protocol}${host}`;
+
+axios.defaults.baseURL = window.location.protocol === 'https:' ? client_url : import.meta.env.VITE_BASE_URL;
 
 const AppContext = createContext();
 
