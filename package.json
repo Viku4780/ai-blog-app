@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "install-all": "npm install && cd client && npm install",
-    "build": "cd client && npm run build",
-    "start": "node server/server.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "build": "npm install --prefix backend && npm install --include=dev --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
   },
   "repository": {
     "type": "git",
