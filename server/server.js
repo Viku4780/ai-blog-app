@@ -18,10 +18,7 @@ app.use(cors({
 }));
 app.use(express.json());
 
-// serve frontend build
-// needed if using ES modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = path.resolve();
 
 // correct static path
 app.use(express.static(path.join(__dirname, "../client/dist")));
