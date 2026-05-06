@@ -1,4 +1,4 @@
-### AI BLog App
+# AI BLog App
 
 A blog platform where only the admin can create and publish posts, and users can interact through comments that are moderated before being visible.
 
@@ -23,6 +23,7 @@ This project focuses on content control, moderation workflows, and clean role-ba
 
 ##  Project Structure
 
+```bash
 ai-blog-app/
 │
 ├── client/
@@ -85,18 +86,19 @@ ai-blog-app/
 ├── .gitignore
 ├── package.json
 └── README.md
+```
 
 
 ## ⚙️ Installation
 
-# 1. Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Viku4780/ai-blog-app.git
 cd ai-blog-app
 ```
 
-# 2. Install dependencies
+### 2. Install dependencies
 
 ```bash
 cd client
@@ -157,32 +159,32 @@ npm run server
 
 ## Application Workflow
 
-# 📝 Blog Creation
+### 📝 Blog Creation
 1. Admin logs in
 2. Admin creates a blog post
 3. Post is published and visible to all users
 
-# 💬 Comment Flow
+### 💬 Comment Flow
 1. User submits a comment
 2. Comment is stored as pending
 3. Admin reviews the comment:
   * ✅ Approve → comment becomes visible
   * ❌ Reject/Delete → comment stays hidden or removed
 
-# 🧠 Core Concepts Implemented
+### 🧠 Core Concepts Implemented
 * Role-based access control (RBAC)
 * Moderation pipeline
 * CRUD operations for blog posts
 * Controlled user-generated content
 * Backend-driven validation
 
-# 📌 Use Cases
+### 📌 Use Cases
 * Personal blogging platform
 * Admin-controlled publishing systems
 * Content moderation systems
 * Learning full-stack backend architecture
 
-# 🛠️ Tech Stack
+### 🛠️ Tech Stack
 * Frontend - React, motion, TailwindCSS, quill, marked and react-hot-toast
 * Backend - NodeJS, express , cors, imagekit, mongoose, multer and dotenv
 * Database - MongoDB
